@@ -6,11 +6,8 @@ public class SubtitleItem
     public string TimeKey { get; set; } = string.Empty;
     
     //字幕语句
-    public string Sentence { get; set; } = string.Empty;
-    
-    //字幕所在行数
-    public long LineIndex { get; set; }
+    public string Text { get; set; } = string.Empty;
     
     //翻译后的句子
-    public string SubtitleTranslatedItem { get; set; } = string.Empty;
+    public string TranslatedText { get; set; } = string.Empty;
 }

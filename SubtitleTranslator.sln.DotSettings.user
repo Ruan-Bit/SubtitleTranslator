@@ -1,22 +1,18 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AFile_002Ecs_002Fl_003AC_0021_003FUsers_003FRuanJH_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F3f31e7e8aa33de883c2ccfa62a9c81bfc246c36e825b489476f9472032e512_003FFile_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AGroupCollection_002Ecs_002Fl_003AC_0021_003FUsers_003FRuanJH_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fc4bfbf124d976c436b0abe06f68b6d71e6aa3f85ba43c956bcf573fec13aa2_003FGroupCollection_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\dotnet\sdk\9.0.201\MSBuild.dll</s:String>
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\RuanJH\AppData\Local\JetBrains\Rider2025.1\resharper-host\temp\Rider\vAny\CoverageData\_SubtitleTranslator.-1674423396\Snapshot\snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0c443be1_002D51e9_002D41bf_002D8d3c_002D1a9da891fee3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMethod1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;MSTest::8640EFBD-602C-4186-9386-681C1E28EFCA::net9.0-windows::SubtitleTranslatorTest.Test1.TestMethod1&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
 	
 	
 	
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=691de7e7_002D2743_002D4fb7_002D8f41_002Da8037685d504/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="testService" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::0B197F95-62E0-486F-8E37-7BDC3CA2946D::net9.0-windows::SubtitleTranslator.Backend.TranslateService.BaiduApiTranslateService.testService&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
+	
+	
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e755f7cb_002D352f_002D40b3_002D987b_002D7f4bce581a27/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="testService #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;MSTest::8640EFBD-602C-4186-9386-681C1E28EFCA::net9.0-windows::SubtitleTranslatorTest.Test1.TestMethod1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE233D0F-A539-41E9-ABE3-FBCDAFE969EF::net9.0-windows::TestProject.Test1.TestParseVtt&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE233D0F-A539-41E9-ABE3-FBCDAFE969EF::net9.0-windows::TestProject.Test1.TestTranslateService&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

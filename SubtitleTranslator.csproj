@@ -9,4 +9,16 @@
         <LangVersion>default</LangVersion>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="TestProject\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="TestProject\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="TestProject\**" />
+    </ItemGroup>
+
 </Project>
