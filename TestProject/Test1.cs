@@ -21,7 +21,7 @@ public sealed class Test1
     public void TestTranslateService()
     {
         var baiduTranslateService = ITranslateService.GetService(ITranslateService.ServiceType.BaiduApi);
-        var result = baiduTranslateService.TranslateAsync("hello testing").Result;
+        var result = baiduTranslateService.TranslateAsync("hello").Result;
         Console.WriteLine("翻译结果：" + result);
         
     }
