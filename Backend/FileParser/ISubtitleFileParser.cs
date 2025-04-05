@@ -4,7 +4,8 @@ namespace SubtitleTranslator.Backend.FileParser;
 
 public interface ISubtitleFileParser
 {
-    IAsyncEnumerable<SubtitleItem> ReadAsync(string filePath);
+    IEnumerable<SubtitleItem> Read(string filePath);
     
-    Task WriteAsync(string filePath, IAsyncEnumerable<SubtitleItem> sentences);
+    Task WriteAsync(string newFilePath, IEnumerable<SubtitleItem> sentences);
+
 }

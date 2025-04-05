@@ -19,6 +19,10 @@ public class BaiduApiTranslateService : ITranslateService
 
     public async Task<string> TranslateAsync(string sentence)
     {
+        if (string.IsNullOrEmpty(sentence))
+        {
+            return "";
+        }
         var salt = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
         var sign = MD5Utils.GetMD5WithString(AppId + sentence + salt + Key);
         var requestBody = new Dictionary<string, string>
@@ -38,7 +42,11 @@ public class BaiduApiTranslateService : ITranslateService
         var responseContent = await responseMsg.Content.ReadAsStringAsync();
 
         var baiduTranslateRes = JsonSerializer.Deserialize<BaiduTranslateRes>(responseContent);
-        if (baiduTranslateRes == null) return "";
+        if (baiduTranslateRes?.trans_result == null || baiduTranslateRes.trans_result.Count == 0)
+        {
+            return "";
+        }
+
         var result = new StringBuilder();
         foreach (var t in baiduTranslateRes.trans_result)
         {

@@ -5,40 +5,65 @@ namespace SubtitleTranslator.Backend.FileParser;
 
 public class VttParser : ISubtitleFileParser
 {
-    private static readonly Regex TimeRegex = new Regex(@"[0-9]*:[0-9]+:[0-9]+.[0-9]+ --> [0-9]*:[0-9]+:[0-9]+.[0-9]+");
+    private static readonly Regex TimeRegex = new Regex(@"([0-9]+:)*[0-9]+:[0-9]+.[0-9]+ --> ([0-9]+:)*[0-9]+:[0-9]+.[0-9]+");
 
-    public async IAsyncEnumerable<SubtitleItem> ReadAsync(string filepath)
+    public IEnumerable<SubtitleItem> Read(string filepath)
     {
-        var liensEnumerable = File.ReadLinesAsync(filepath);
-        await foreach (var lien in liensEnumerable)
+        var liensEnumerable = File.ReadAllLines(filepath);
+        int i = 0;
+        while (i < liensEnumerable.Length)
         {
-            var lineTrimmed = lien.Trim();
-            var subtitleItem = new SubtitleItem();
-            if (lineTrimmed.StartsWith("WEBVTT") || lineTrimmed.StartsWith("NOTE") || string.IsNullOrEmpty(lineTrimmed)) 
+            var curLine = liensEnumerable[i].Trim();
+            if (IsTimeLine(curLine))
             {
-                continue; 
-            }
-            //时间
-            if (lineTrimmed.Contains("-->"))
-            {
-                var match = TimeRegex.Match(lineTrimmed);
-                if (match.Success)
+                var subtitleItem = new SubtitleItem();
+                var times = curLine.Split("-->");
+                subtitleItem.StartTime = times[0].Trim();
+                subtitleItem.EndTime = times[1].Trim();
+                //字幕行
+                var subtitleLines = new List<string>();
+                while (i < liensEnumerable.Length - 1)
                 {
-                    subtitleItem.TimeKey = match.Groups[0].Value + match.Groups[1].Value;
+                    var subtitleLine = liensEnumerable[++i];
+                    if (!IsTimeLine(subtitleLine))
+                    {
+                        subtitleLines.Add(subtitleLine.Replace("—", "").Trim());
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
+                subtitleItem.Text = subtitleLines.Aggregate((a, b) => a  + b);
+                yield return subtitleItem;
             }
             else
             {
-                //字幕
-                subtitleItem.Text = lineTrimmed;
+                i++;
             }
-            yield return subtitleItem;
         }
     }
     
-
-    public Task WriteAsync(string filepath, IAsyncEnumerable<SubtitleItem> sentences)
+    private bool IsTimeLine(string line)
     {
-        throw new NotImplementedException();
+        return line.Contains("-->") && TimeRegex.Match(line).Success;
+    }
+
+    public async Task WriteAsync(string newFilePath, IEnumerable<SubtitleItem> subtitleItems)
+    {
+        var fileStream = File.Create(newFilePath);
+        var streamWriter = new StreamWriter(fileStream);
+        await streamWriter.WriteLineAsync("WEBVTT\n\n");
+        foreach (var subtitleItem in subtitleItems)
+        {
+            await streamWriter.WriteLineAsync(
+                subtitleItem.StartTime + " --> " + subtitleItem.EndTime
+                + "\n"
+                + subtitleItem.TranslatedText
+                + "\n"
+            );
+        }
+        await streamWriter.FlushAsync();
+        streamWriter.Close();
     }
 }
