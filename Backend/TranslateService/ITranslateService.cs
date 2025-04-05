@@ -1,4 +1,6 @@
-﻿namespace SubtitleTranslator.Backend.TranslateService;
+﻿using SubtitleTranslator.Backend.Obj;
+
+namespace SubtitleTranslator.Backend.TranslateService;
 
 public interface ITranslateService
 {

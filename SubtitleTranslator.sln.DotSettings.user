@@ -1,8 +1,13 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AAppendPrepend_002Ecs_002Fl_003AC_0021_003FUsers_003F_962E_5065_6D2A_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fd1e710a9366d6ce98fe2b242831e81679c784542fe50ee4d62ec18c62ec781_003FAppendPrepend_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AFile_002Ecs_002Fl_003AC_0021_003FUsers_003FRuanJH_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F3f31e7e8aa33de883c2ccfa62a9c81bfc246c36e825b489476f9472032e512_003FFile_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AFile_002Ecs_002Fl_003AC_0021_003FUsers_003F_962E_5065_6D2A_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F3f31e7e8aa33de883c2ccfa62a9c81bfc246c36e825b489476f9472032e512_003FFile_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AGroupCollection_002Ecs_002Fl_003AC_0021_003FUsers_003FRuanJH_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fc4bfbf124d976c436b0abe06f68b6d71e6aa3f85ba43c956bcf573fec13aa2_003FGroupCollection_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AJoin_002Ecs_002Fl_003AC_0021_003FUsers_003F_962E_5065_6D2A_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fcaee97a1b39e324d1a4c3ce9478ef42b547f239d95c7d9f3a1c42e13bf1804d_003FJoin_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AObject_002Ecs_002Fl_003AC_0021_003FUsers_003F_962E_5065_6D2A_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d_003FObject_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ASelect_002Ecs_002Fl_003AC_0021_003FUsers_003F_962E_5065_6D2A_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F8e1d8b1898e68b78b98a28b765909f5e8fe77f501fc13d7575127219d3148_003FSelect_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\dotnet\sdk\9.0.201\MSBuild.dll</s:String>
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\RuanJH\AppData\Local\JetBrains\Rider2025.1\resharper-host\temp\Rider\vAny\CoverageData\_SubtitleTranslator.-1674423396\Snapshot\snapshot.utdcvr</s:String>
+	
 	
 	
 	
@@ -12,7 +17,6 @@
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e755f7cb_002D352f_002D40b3_002D987b_002D7f4bce581a27/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="testService #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;MSTest::EE233D0F-A539-41E9-ABE3-FBCDAFE969EF::net9.0-windows::TestProject.Test1.TestParseVtt&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;MSTest::EE233D0F-A539-41E9-ABE3-FBCDAFE969EF::net9.0-windows::TestProject.Test1.TestTranslateService&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE233D0F-A539-41E9-ABE3-FBCDAFE969EF::net9.0-windows::TestProject.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
